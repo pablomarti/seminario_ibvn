@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: elearning_production
   username: elearning
   password: <%= ENV['ELEARNING_DATABASE_PASSWORD'] %>
+  pool: 5
+  timeout: 5000

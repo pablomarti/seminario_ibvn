@@ -42,3 +42,7 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
 gem 'devise'
+
+group :production, :staging do
+  gem 'pg'
+end
