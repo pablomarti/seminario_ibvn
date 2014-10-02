@@ -4,14 +4,37 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-2 well">
+    <div class="col-md-3 well">
       <div class="row-fluid">
+        <h2><a href='javascript:void(0)'>Lecciones</a></h2>
         <%= render :partial => "lesson", :collection => @lessons %>
+        <h2><a href='javascript:void(0)'>Evaluaciones</a></h2>
+        <h2><a href='javascript:void(0)'>Material</a></h2>
+        <h2><a href='javascript:void(0)'>Discusiones</a></h2>
       </div>
     </div>
 
+    <div class="col-md-1">
+    </div>
+
     <div class="col-md-8">
-      d
+      <h2><%= @lesson.name %></h2>
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/1mRLPAXNq64?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <br />
+
+      <div class="well">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris orci tellus, tincidunt a pharetra quis, ullamcorper et dui. Vestibulum convallis nunc neque, ut ornare libero porta vitae. Mauris efficitur lacus eu elit imperdiet, ac consequat urna ultrices. Suspendisse sit amet nisl non risus sodales pellentesque. Integer feugiat lacus tellus, eu lacinia nunc mattis malesuada. Donec maximus est posuere enim convallis, nec vulputate lacus accumsan. Praesent risus tellus, placerat id ex id, viverra dictum augue. Nullam vel sem elit. Cras ac augue dictum, porta quam ac, accumsan ipsum. Integer consequat magna nec egestas auctor. Pellentesque commodo risus non rhoncus sodales. Etiam condimentum ex quis orci placerat, vitae euismod risus ornare. Duis tempus lacinia sodales.
+        <br /><br />
+        Vivamus porttitor interdum interdum. Nunc sit amet lorem sed ex dictum ullamcorper. Cras quis ornare arcu. Cras mollis felis ac finibus posuere. Curabitur rhoncus scelerisque urna ac volutpat. Vestibulum sed tristique tortor. Sed sed vestibulum dolor. Vivamus iaculis lobortis enim id vulputate. Proin rutrum nulla nec erat ultricies, sit amet dapibus enim suscipit. Aenean sed risus lacus.
+        <br /><br />
+        Curabitur sed ante ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur ornare augue lorem, sed condimentum eros commodo eu. Curabitur mattis massa finibus tellus interdum feugiat non sit amet libero. Duis vel ipsum tempor mi rhoncus pellentesque. Integer porttitor, arcu eget sollicitudin maximus, urna quam sollicitudin dui, in viverra justo felis ac nisi. Sed egestas arcu ullamcorper lacus sollicitudin pharetra. Etiam vitae euismod ipsum. Suspendisse potenti. Maecenas sed neque in felis interdum condimentum. Pellentesque et nunc porta, aliquam justo volutpat, hendrerit diam.
+        <br /><br />
+        Donec efficitur feugiat dolor, ut dignissim arcu pulvinar ac. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lobortis dolor quis ante sodales, a facilisis tortor cursus. Nunc facilisis neque diam. Donec et nibh vestibulum, dignissim magna suscipit, eleifend mauris. Integer pellentesque venenatis neque aliquam volutpat. Aliquam eget urna dolor. Phasellus eu quam velit. Curabitur ut scelerisque enim, non sollicitudin mi. Donec venenatis metus justo, quis finibus magna imperdiet in. Etiam interdum elit elit, vitae ullamcorper dolor euismod et. Mauris et nunc tellus. Suspendisse potenti. Nam orci ante, gravida luctus semper sed, tempor in mauris. Aenean in leo tincidunt, sollicitudin eros sit amet, interdum massa.
+      </div>
     </div>
   </div>
 </div>

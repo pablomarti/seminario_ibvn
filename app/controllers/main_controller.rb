@@ -6,7 +6,8 @@ class MainController < ApplicationController
 
   def course
     @course = Course.find(params[:id])
-    @lessons = @course.lessons
+    @lessons = @course.lessons.order("id ASC")
+    @lesson = @lessons.first
   end
 
   def lesson
