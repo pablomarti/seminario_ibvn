@@ -55,3 +55,4 @@ production:
   password: <%= ENV['ELEARNING_DATABASE_PASSWORD'] %>
   pool: 5
   timeout: 5000
+  encoding: unicode
